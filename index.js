@@ -55,3 +55,26 @@ function foundOdd (number){
 const number = [2,4 ,5,6,7,8,13]
 const result3 = foundOdd(number)
 console.log(result3)
+
+// problem number 4 
+
+
+function newOdd (number){
+    const odd = [];
+    for(const num of number){
+        if(num % 2 === 1 ){
+            odd.push(num)
+        }
+    }
+    let i = 0 ;
+    for(const oddnum of odd ){
+        i += oddnum;
+    }
+    const count = odd.length;
+    const average = i / count ;
+    return average.toFixed(4)
+}
+
+const number = [2,3,4,5,6,7,8,9,10]
+const result4 = newOdd(number);
+console.log(result4)
