@@ -1,5 +1,5 @@
 // chapter of logic 
-// problem number 1 
+problem number 1 
 function avrage(numbers){
     const even = [];
     for(const number of numbers){
@@ -78,3 +78,20 @@ function newOdd (number){
 const number = [2,3,4,5,6,7,8,9,10]
 const result4 = newOdd(number);
 console.log(result4)
+
+// problem number 5 
+function convertString (number){
+const odd = [];
+for(const num of number){
+    if(num % 2 === 1 ){
+        odd.push(num)
+    }
+}
+let strr = odd.join(",")
+return strr;
+}
+
+const number = [2,3,4,5,6,7,8,9,10];
+const result5 = convertString(number);
+console.log(result5)
+
