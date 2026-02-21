@@ -8,7 +8,7 @@ function threee(num1 = 0 , num2 = 0 , num3 = 0 ){
 const result6 = threee(1,3,2)
 console.log(result6)
 
-// problem number 2 
+// // problem number 2 
  function deposit (amount = 50 ){
    if(amount === 0){
     return 'you have only default amount '
@@ -39,3 +39,11 @@ function employeeDetails (name = "annonymous", monthlySalary = 0 ){
 
 const result8 = employeeDetails("Jhon",  )
 console.log(result8) 
+
+// problem number 4 
+function Square(number = 1){
+    return number * number ;
+}
+
+const result9 = Square();
+console.log(result9)
