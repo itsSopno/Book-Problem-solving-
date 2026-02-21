@@ -21,3 +21,21 @@ console.log(result6)
  }
  const result7 = deposit(0)
  console.log(result7)
+
+// problem number 3 
+function employeeDetails (name = "annonymous", monthlySalary = 0 ){
+    if(name !== undefined && monthlySalary === 0){
+        return `employee is available and we have his salarry is not entered`
+    }else if(name !== undefined && monthlySalary !== undefined){
+        return `employee is available and we have his salary is ${monthlySalary}`
+    }
+    else if(name === "annonymous" && monthlySalary === 0){
+        return "employee is not available"
+    }
+    else{
+        return " we need employee details "
+    }
+}
+
+const result8 = employeeDetails("Jhon",  )
+console.log(result8) 
