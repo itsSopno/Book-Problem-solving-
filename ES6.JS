@@ -5,8 +5,8 @@ function threee(num1 = 0 , num2 = 0 , num3 = 0 ){
     return num1 + num2 + num3 ;
 }
 
-const result6 = threee(1,3,2)
-console.log(result6)
+// const result6 = threee(1,3,2)
+// console.log(result6)
 
 // problem number 2 
  function deposit (amount = 50 ){
@@ -19,8 +19,8 @@ console.log(result6)
    }
 
  }
- const result7 = deposit(0)
- console.log(result7)
+//  const result7 = deposit(0)
+//  console.log(result7)
 
 // problem number 3 
 function employeeDetails (name = "annonymous", monthlySalary = 0 ){
@@ -37,16 +37,16 @@ function employeeDetails (name = "annonymous", monthlySalary = 0 ){
     }
 }
 
-const result8 = employeeDetails("Jhon",  )
-console.log(result8) 
+// const result8 = employeeDetails("Jhon",  )
+// console.log(result8) 
 
 // problem number 4 
 function Square(number = 1){
     return number * number ;
 }
 
-const result9 = Square();
-console.log(result9)
+// const result9 = Square();
+// console.log(result9)
 
 // problem nunmber 5 
 function product ( num = "undifined" , price = 1){
@@ -57,8 +57,8 @@ function product ( num = "undifined" , price = 1){
     }
 }
 
-const product1 = product("laptop" , 50000)
-console.log(product1)
+// const product1 = product("laptop" , 50000)
+// console.log(product1)
 
 // problem 6 
 function Mybook(books = []){
@@ -74,6 +74,52 @@ for(let i = 0 ; i < books.length ; i++){
 }
 return result;
 }
-const books = ["book1", "book2", "", "book4", null, undefined, "book7"];
-const result10 = Mybook(books)
-console.log(result10)
+// const books = ["book1", "book2", "", "book4", null, undefined, "book7"];
+// const result10 = Mybook(books)
+// console.log(result10)
+
+// problem number 7 
+function bookObject(obj = {}) {
+    const defaultBook = "Unknown Book";
+
+    for (const key in obj) {
+        let book = obj[key];
+
+        if (!book || (typeof book === "string" && book.trim() === "")) {
+            obj[key] = defaultBook;
+        }
+    }
+
+    return obj;
+}
+// const bookObj = {
+//     book1 : "book1",
+//     book2 : "book2",
+//     book3 : "",
+//     book4 : "book4",}
+// const result11 = bookObject(bookObj)
+// console.log(result11)
+
+// problem number 8 
+function multiply(numbers = []) {
+    const defaultNumber = [5, 7, 8];
+
+    for (let i = 0; i < numbers.length; i++) {
+        let num = numbers[i];
+        let value;
+
+        if (num === null || num === undefined || (typeof num === "string" && num.trim() === "")) {
+            value = defaultNumber[i] ?? 1;
+        } else {
+            value = num;
+        }
+
+        numbers[i] = value * 2; 
+
+    return numbers;
+}
+}
+// const numbers = [1, 2, "", 4, null, 7];
+// multiply(numbers);
+// console.log(numbers);
+
