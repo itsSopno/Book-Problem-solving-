@@ -1,5 +1,5 @@
 // ES6 CHAPTER PROBLEMS , PHASE 1 
-// PROBLEM NUMBER 1 
+PROBLEM NUMBER 1 
 
 function threee(num1 = 0 , num2 = 0 , num3 = 0 ){
     return num1 + num2 + num3 ;
@@ -47,3 +47,15 @@ function Square(number = 1){
 
 const result9 = Square();
 console.log(result9)
+
+// problem nunmber 5 
+function product ( num = "undifined" , price = 1){
+    if(num !== "undifined" && price === 0){
+        return `we have ${num} but we don't have price`
+    }else{
+        return `we have ${num} and the price is ${price}`
+    }
+}
+
+const product1 = product("laptop" , 50000)
+console.log(product1)
