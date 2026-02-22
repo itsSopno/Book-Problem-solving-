@@ -1,5 +1,5 @@
 // ES6 CHAPTER PROBLEMS , PHASE 1 
-PROBLEM NUMBER 1 
+// PROBLEM NUMBER 1 
 
 function threee(num1 = 0 , num2 = 0 , num3 = 0 ){
     return num1 + num2 + num3 ;
@@ -8,7 +8,7 @@ function threee(num1 = 0 , num2 = 0 , num3 = 0 ){
 const result6 = threee(1,3,2)
 console.log(result6)
 
-// // problem number 2 
+// problem number 2 
  function deposit (amount = 50 ){
    if(amount === 0){
     return 'you have only default amount '
@@ -59,3 +59,21 @@ function product ( num = "undifined" , price = 1){
 
 const product1 = product("laptop" , 50000)
 console.log(product1)
+
+// problem 6 
+function Mybook(books = []){
+    const defaultBook = "unknown book"
+const result = [];
+for(let i = 0 ; i < books.length ; i++){
+    let book = books[i];
+    if( !book || book.length === 0){
+        result.push(defaultBook);
+    }else{
+        result.push(book);
+    }
+}
+return result;
+}
+const books = ["book1", "book2", "", "book4", null, undefined, "book7"];
+const result10 = Mybook(books)
+console.log(result10)
