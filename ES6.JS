@@ -123,3 +123,56 @@ function multiply(numbers = []) {
 // multiply(numbers);
 // console.log(numbers);
 
+// problem number 9 
+const number = numbers => {
+    return numbers[3];
+}
+// const numbers = [1, 2, 3, 4, 5];
+// const result12 = number(numbers)
+// console.log(result12)
+
+// problem number 10 
+
+const getPlase = (num1 , num2 , num3 , num4 ) =>{
+    return num1 + num2 + num3 + num4 ;
+}
+
+// const result13 = getPlase(1,2,3,4)
+// console.log(result13)
+
+// problem number 11 
+const getUnknown = () => "unknown" 
+
+// console.log(getUnknown())
+
+// problem number 12 
+const Food = (name , price ) =>({
+    name : name || "unknown",
+    price : price / 5 || 0 ,
+
+})
+
+// const result14 = Food("pizza" , 500)
+// console.log(result14)
+
+// problem number 13 
+const firstLast = (arr) => {
+    const lastIndex = arr.length - 1;
+    const firstelement = arr[0];
+    const lastelement = arr[lastIndex];
+    return firstelement + lastelement;
+}
+
+// const arr = [10,12,13,14,15,16,20];
+// const result15 = firstLast(arr);
+// console.log(result15);
+
+// problem number 14 
+const defaultValue = (value1 = "10" , value2 = "5") => {
+    const num1 = parseInt(value1);
+    const num2 = parseInt(value2);
+    return num1 + num2 ;
+}
+// const result16 = defaultValue("20" )
+// console.log(result16)
+
